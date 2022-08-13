@@ -1,5 +1,3 @@
-import 'package:bytebank_v2/pages/contacts_form.dart';
-import 'package:bytebank_v2/pages/contacts_list.dart';
 import 'package:flutter/material.dart';
 import 'pages/dashboard.dart';
 
@@ -16,12 +14,12 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         primaryColor: Colors.green[900],
-        buttonTheme: ButtonThemeData(
-          buttonColor: Colors.blueAccent[700],
+        buttonTheme: const ButtonThemeData(
+          buttonColor: Colors.greenAccent,
           textTheme: ButtonTextTheme.primary,
         ),
       ),
-      home: const ContactsForm(),
+      home: const Dashboard(),
     );
   }
 }
